@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7636C6E226C2732200AB63C7 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 7636C6E126C2732200AB63C7 /* .swiftlint.yml */; };
+		7636C6E426C2738C00AB63C7 /* CreateMLShapeClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7636C6E326C2738C00AB63C7 /* CreateMLShapeClassifier.mlmodel */; };
 		C7927576262C81C900EF5D3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7927575262C81C900EF5D3A /* AppDelegate.swift */; };
 		C7927578262C81C900EF5D3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7927577262C81C900EF5D3A /* SceneDelegate.swift */; };
 		C792757A262C81C900EF5D3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7927579262C81C900EF5D3A /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		7636C6E126C2732200AB63C7 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		7636C6E326C2738C00AB63C7 /* CreateMLShapeClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CreateMLShapeClassifier.mlmodel; sourceTree = "<group>"; };
 		C7927572262C81C900EF5D3A /* MyMagicalHand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMagicalHand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7927575262C81C900EF5D3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7927577262C81C900EF5D3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				C792757E262C81CB00EF5D3A /* Assets.xcassets */,
 				C7927580262C81CB00EF5D3A /* LaunchScreen.storyboard */,
 				C7927583262C81CB00EF5D3A /* Info.plist */,
+				7636C6E326C2738C00AB63C7 /* CreateMLShapeClassifier.mlmodel */,
 			);
 			path = MyMagicalHand;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			files = (
 				C792757A262C81C900EF5D3A /* ViewController.swift in Sources */,
 				C7927576262C81C900EF5D3A /* AppDelegate.swift in Sources */,
+				7636C6E426C2738C00AB63C7 /* CreateMLShapeClassifier.mlmodel in Sources */,
 				C7927578262C81C900EF5D3A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
