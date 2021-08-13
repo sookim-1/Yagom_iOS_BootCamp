@@ -8,9 +8,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet var canvasView: CanvasView!
+    @IBOutlet var resultShapeLabel: UILabel!
+    @IBOutlet var percentageShapeLabel: UILabel!
+
+    @IBAction func clearCanvas(_ sender: UIButton) {
+        canvasView.clear()
+        resultShapeLabel.text = ""
+        percentageShapeLabel.text = ""
+    }
+
+    @IBAction func finishDraw(_ sender: UIButton) {
+        resultShapeLabel.text = "원"
+        percentageShapeLabel.text = "100%"
     }
 
 }
