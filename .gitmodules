@@ -1,0 +1,3 @@
+[submodule "ios-juice-maker"]
+	path = ios-juice-maker
+	url = https://github.com/sookim-1/ios-juice-maker.git
