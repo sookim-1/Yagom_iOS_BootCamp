@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "9ddfba36-a70a-4526-b644-c33de54e15b5",
+		"name": "ProjectManager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15741057",
+		"_collection_link": "https://nephios.postman.co/workspace/Project-Manager~e676f7c8-3e96-4799-8975-ee0dde8a82f7/collection/15739667-9ddfba36-a70a-4526-b644-c33de54e15b5?action=share&source=collection_link&creator=15741057"
+	},
+	"item": [
+		{
+			"name": "Get Memos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://yagom-project-manager.herokuapp.com/memo/doing",
+					"protocol": "https",
+					"host": [
+						"yagom-project-manager",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"memo",
+						"doing"
+					]
+				},
+				"description": "# Parameters\n#### pageId\n- type: Integer\n- required: O\n- path\n\n#### limit\n- type: Integer\n- required: O\n- Default value: 20\n- query\n\n#### sortOrder\n\n- type: String\n- required: X \n- Available values: asc, desc\n- Default value: desc\n- query\n\n# Responses\n\n| Key                          | Type    | Description |\n| ---------------------------- | ------- | ----------- |\n| id                           | Integer |             |\n| title                        | String  |             |\n| content                      | String  |             |\n| deadline                     | Double  |             |\n| memoType (todo, doing, done) | String  |             |"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Memo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"제목\",\n  \"content\": \"콘텐츠\",\n  \"deadline\": 12345,\n  \"memoType\": \"toDo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/memo",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"memo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch Memo",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"due_date\": \"2021-07-07T19:32:00Z\",\n    \"content\": \"콘\",\n    \"memo_type\": \"toDo\",\n    \"title\": \"제목\",\n    \"id\": \"0FCEE8ED-45C1-42CC-95C8-31A712E53D74\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/memo",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"memo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Memo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/memo/E3B1E912-71E1-4707-81FC-A4D5C48F77E0",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"memo",
+						"E3B1E912-71E1-4707-81FC-A4D5C48F77E0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
